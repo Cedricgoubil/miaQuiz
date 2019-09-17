@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Mia's Quizz</title>
+</head>
+<body>
+    <embed src="src/kid.mp3" autostart="true" height="0.2"> 
+    <div class="container">
+        <h1 class="p-2 mb-5 mt-2 bg-warning border rounded border-dark text-center text-secondary">Mia's Ultimate Quizz</h1>
+        <div class="card bg-success text-white mb-5">
+            <div class="card-header text-center"><h4>Choisie ton thème</h4></div>
+                <div class="card-body bg-info text-center">
+                    <form>
+                     <label class="radio-inline mr-5">
+                        <input class="mr-2" id="colors" type="radio" name="button" value="colors"><strong><em>Couleurs</em></strong></label>
+                        <label class="radio-inline mr-5">
+                        <input class="mr-2" id="numbers" type="radio" name="button" value="number"><strong><em>Nombre</em></strong></label>
+                        <label class="radio-inline mr-3">
+                        <input class="mr-2" id="words" type="radio" name="button" value="word"><strong><em>Mots</em></strong></label>
+                        <button class="btn btn-outline-warning" id="button">Joue</button> 
+                    </form>
+                </div>
+            <div class="card-footer text-center bg-secondary">
+                    <div id="quiz">
+                            <div class="h4 font-italic" id="questions"></div>
+                            <div class="h5 text-warning" id="answers"></div>         
+                            <div id="results"></div>
+                        <div id="checkAnswers">
+                             <h4><span class="title"></h4> 
+                               <div id="checker"></div>
+                        </div>   
+                    </div>
+                    <section id="modal" style="visibility:hidden"> 
+                        <h4 class="font-italic">Bravo ma chérie tu as le droit à un bonbon!</h4>
+                    </section> 
+            </div>
+        </div>  
+    </div>
+            <p class="text-center text-white">all rights reserved © By Papa ;)</p>
+</div> 
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
